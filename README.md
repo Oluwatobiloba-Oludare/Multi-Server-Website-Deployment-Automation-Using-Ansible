@@ -1,8 +1,8 @@
-# Multi-Server-Website-Deployment-Automation-Using-Ansible
-
-
 
 # 🚀 Multi-Server Website Deployment Automation Using Ansible
+
+![Alt text](Reference-Architecture.jpg)
+
 
 ## 📌 Project Overview
 
@@ -21,7 +21,7 @@ The setup includes:
 ## 🛠️ Technologies Used
 
 * **AWS EC2**
-* **Amazon Linux 2**
+* **Amazon Linux 2023**
 * **Ansible**
 * **SSH**
 * **Linux**
@@ -70,7 +70,7 @@ The setup includes:
 
 * Launch **Ansible Machine**
 
-  * OS: Amazon Linux 2
+  * OS: Amazon Linux 2023
 * Launch **Server Instances**
 
   * Attach `server-sg`
@@ -107,8 +107,8 @@ ssh ec2-user@<private-ip>
 ### Step 6: Install Ansible on Control Node
 
 ```bash
-sudo yum update -y
-sudo amazon-linux-extras install ansible2 -y
+sudo dnf update -y
+sudo dnf install -y ansible
 ```
 
 ---
@@ -129,6 +129,8 @@ Example:
 
 * Playbook handles automated website deployment
 * Written in YAML
+  
+ [playbook.yml](https://github.com/Oluwatobiloba-Oludare/Multi-Server-Website-Deployment-Automation-Using-Ansible/blob/main/playbook.yml)
 
 ---
 
@@ -163,6 +165,9 @@ ansible-playbook deploy-techmax.yml
 
 ## ✅ Outcome
 
+![Alt text](Project-outcome.PNG)
+
+
 * Successfully deployed a website across multiple servers
 * Centralized configuration management
 * Secure and scalable automation
@@ -183,8 +188,9 @@ ansible-playbook deploy-techmax.yml
 
 ## 👨‍💻 Author
 
-**[Your Name]**
-DevOps Engineer | Linux | Ansible | AWS
+**Oluwatobiloba Oludare**
+
+DevOps Engineer | Linux | Ansible | AWS | Terraform
 
 ---
 
